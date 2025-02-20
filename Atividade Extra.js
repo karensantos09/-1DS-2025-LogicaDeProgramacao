@@ -3,55 +3,26 @@
  ***********************************************************************
 
 
-1. Par ou Ímpar?
+ 
+//Atividade 01- Par ou ímpar?
 Escreva um programa que peça um número ao usuário e exiba no console se ele é par ou ímpar.
 📌 Dica: Use o operador % para verificar o resto da divisão.
-------------------------------------------------------------------------
+------------------------------------------------------------------------*/
+const imparpar = (num) => {
+  return num % 2 == 0 ? "O número é par!" : "O número é impar!";
+  console.log(imparpar(10));
+  console.log(imparpar(3));
+  console.log(imparpar(2));
+};
 
-2. Tabuada
-Peça ao usuário um número e exiba no console a tabuada desse número de 1 a 10.
-
-
-📌 Exemplo (se o número for 3):
-3 x 1 = 3
-3 x 2 = 6
-...
-3 x 10 = 30
-------------------------------------------------------------------------
-
-
-3. Fatorial de um Número
-Solicite um número ao usuário e exiba no console o seu fatorial.
-
-
-📌 Fatorial de 5: 5! = 5 × 4 × 3 × 2 × 1 = 120
-------------------------------------------------------------------------
-
-
-4. Soma dos Números de um Array
-Crie um programa que tenha um array com números aleatórios e exiba no console a soma total desses números.
-
-
-📌 Exemplo:
-let numeros = [10, 20, 30, 40];  
-// Saída: Soma = 100
-------------------------------------------------------------------------
-
-
-5. Ordenação de Números
-Peça ao usuário para inserir vários números separados por vírgula. Depois, exiba os números ordenados de forma crescente no console.
-
-
-📌 Exemplo:
-Entrada: 8, 3, 5, 1, 9  
-Saída: 1, 3, 5, 8, 9 
-------------------------------------------------------------------------
-
-
-//Atividade 01- Par ou ímpar?
-*/
-
-// Atividade 02- Tabuada
+///2. Tabuada
+//Peça ao usuário um número e exiba no console a tabuada desse número de 1 a 10.
+//📌 Exemplo (se o número for 3):
+//3 x 1 = 3
+// //3 x 2 = 6
+//...
+//3 x 10 = 30//*
+//------------------------------------------------------------------------
 var tabuada = 5;
 console.log(tabuada, "x 0 =", tabuada * 0);
 console.log(tabuada, "x 1 =", tabuada * 1);
@@ -66,9 +37,29 @@ console.log(tabuada, "x 9 =", tabuada * 9);
 console.log(tabuada, "x 10 =", tabuada * 10);
 
 //Atividade 03- Fatorial de um número
+//3. Fatorial de um Número
+//Solicite um número ao usuário e exiba no console o seu fatorial.
+
+//📌 Fatorial de 5: 5! = 5 × 4 × 3 × 2 × 1 = 120
+//------------------------------------------------------------------------
 console.log("Fatorial de 5! =", 5 * 4 * 3 * 2 * 1);
 
 //Atividade 04- Soma dos Números de um Array
-var soma = [9, 0, 1];
-console.log("A soma dos itens é =", soma[0] + soma[1] + soma[2]);
+//Crie um programa que tenha um array com números aleatórios e exiba no console a soma total desses números.
+//📌 Exemplo:
+//let numeros = [10, 20, 30, 40];
+// Saída: Soma = 100
+//------------------------------------------------------------------------
+var numeros = [10, 20, 30, 40];
+var soma = numeros[0] + numeros[1] + numeros[2] + numeros[3];
+console.log(soma);
+
 //Atividade 05- Ordenação de números
+//Peça ao usuário para inserir vários números separados por vírgula. Depois, exiba os números ordenados de forma crescente no console.
+//📌 Exemplo:
+//Entrada: 8, 3, 5, 1, 9
+//Saída: 1, 3, 5, 8, 9
+//------------------------------------------------------------------------
+const ordemNumero = [8,3,5,1,9]
+console.log(ordemNumero)
+console.log(ordemNumero.sort())
